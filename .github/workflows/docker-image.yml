@@ -1,4 +1,4 @@
-name: Build and PHP-ENV Docker Image
+name: Build and php Docker Image
 
 on:
   push:
