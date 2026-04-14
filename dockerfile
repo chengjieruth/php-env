@@ -29,6 +29,7 @@ RUN echo "apc.enabled=1" >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini \
 # 启动脚本：先启 php-fpm，再启 nginx
 COPY start.sh /
 COPY dufs /usr/local/bin/
+RUN chmod +x /start.sh && chmod +x /usr/local/bin/dufs
 WORKDIR /var/www/html
 EXPOSE 80
 
